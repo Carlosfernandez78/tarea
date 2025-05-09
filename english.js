@@ -16,8 +16,10 @@ let devProfile = {
 function presentProfile(profile) {
     let skillsString = profile.skills.join(", ");
     let employmentStatus = profile.isEmployed ? "I am currently employed." : "I am looking for a job.";
-    let presentation = `Hello! my name is ${profile.fullName}. I am a ${profile.age}. i work with ${skillsString}. I Live in ${profile.contact.location}. ${profile.age}. years old.${employmentStatus}`;
+    let presentation = `Hello! my name is ${profile.fullName}.\n i work with ${skillsString}.\n I Live in ${profile.contact.location}.\n ${profile.age}. years old.\n ${employmentStatus}`;
     return presentation;
 }
+
 console.log(presentProfile(devProfile));
 // Output: Hello, my name is Carlos Fernandez. I am a 47 years old i work with JavaScript, React, Node.js, MongoDB. I Live in Posadas, Misiones, Argentina. 47 years old.I am currently employed.
+
